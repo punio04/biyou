@@ -1803,13 +1803,9 @@ margin:2.3em 0.5em 0.5em 0.5em;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 4rem;
 }
 .thread_item {
   width: calc(50% - 3rem);
-}
-.thread_item img {
-  border: 1px solid #f2f2f2;
 }
 .thread_item h3 {
   font-size: 2.5rem;
@@ -1819,6 +1815,7 @@ margin:2.3em 0.5em 0.5em 0.5em;
 .thread_item p {
   font-size: 1.6rem;
   margin-top: 1rem;
+  text-align: center;
 }
 .example_item + .example_item {
   margin-top: 4rem;
@@ -1891,6 +1888,9 @@ a.modal_annotation-open {
   font-weight: 700;
   text-align: center;
   border: 3px solid rgba(255,252,252,0.40);
+}
+.thread_text a {
+  text-decoration: underline;
 }
 .effect_media {
   position: relative;
@@ -2028,7 +2028,7 @@ a.modal_annotation-open {
     width: 100%;
   }
   .thread_item h3 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .thread_item + .thread_item {
     margin-top: 4rem;
@@ -2414,4 +2414,11 @@ img.fit {
 .small {
   font-size: 17px;
   color: #5d5d5d;
+}
+
+@media screen and (max-width: 768px) {
+  .thread_text {
+    padding-bottom: 12px;
+    font-size: 3.5rem;
+  }
 }
